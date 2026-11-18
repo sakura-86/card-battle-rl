@@ -103,6 +103,8 @@ PUCT 对 `RulePlanner`，每个点 60 局：
 
 复现：`python -m card_battle_rl.experiments.budget_scan --games 60`
 
+![search budget sweep](results/budget_scan.png)
+
 三个读数：
 
 1. **1 次模拟 ≈ 加了一点随机性的贪心**（46.7%，和规则打平）。搜索的起点并不比规则强。
@@ -111,9 +113,13 @@ PUCT 对 `RulePlanner`，每个点 60 局：
 
 第 3 点是这个仓库想说明的核心：**搜索的收益不是线性的，它会在某个点之后完全停止**。而在真实卡牌游戏里，那个点出现的模拟次数，远超实战可用的算力预算。
 
+注意阴影（95% 置信区间）在 64 之后不再收缩——多加 4 倍模拟，你甚至没有买到更确定的答案。
+
 ### 5.2 各 agent 的强度阶梯
 
 来源：`python -m card_battle_rl.experiments.ladder`（写入 `results/ladder.csv`）
+
+![agent strength ladder](results/ladder.png)
 
 | 对局 | 胜率 | 95% CI | 样本 |
 |---|---:|---|---:|

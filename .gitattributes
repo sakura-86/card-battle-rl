@@ -1,0 +1,4 @@
+# Normalise line endings so results are byte-identical across machines.
+* text=auto eol=lf
+*.pt binary
+*.png binary

@@ -1,0 +1,6 @@
+agent_a,agent_b,games,wins,losses,draws,win_rate,ci_low,ci_high
+random,greedy,120,38,82,0,0.3167,0.2402,0.4045
+random,rule_planner,120,23,97,0,0.1917,0.1312,0.2712
+greedy,rule_planner,200,70,130,0,0.35,0.2873,0.4184
+puct_64,greedy,60,45,15,0,0.75,0.6277,0.8422
+puct_64,rule_planner,120,69,51,0,0.575,0.4856,0.6598

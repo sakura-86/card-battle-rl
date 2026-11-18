@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Checkpoints are large and fully reproducible from the training command.
+results/*.pt
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
